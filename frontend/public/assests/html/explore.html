@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> BHUKK- Drink,Chill,Repeat</title>
+    <link rel="stylesheet" href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\css\style.css" />
+    <link rel="stylesheet" href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\css\index.css" />
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="glass-nav">
+        <div class="logo">
+            <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\index.html" class="logo-link">
+                <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\bhuk.png" alt="BHUKK Logo" />
+                <span class="logo-text">BHUKK- Drink,Chill,Repeat</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\index.html">Home</a></li>
+            <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\explore.html" class="active">Explore</a></li>
+            <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\partners.html">For Partners</a></li>
+            <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero part -->
+    <section id="explore-hero">
+        <div class="explore-overlay"></div>
+        <video autoplay muted loop playsinline class="hero-video">
+    <source src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\video\From KlickPin CF Flor de Caña 18 Year Rum [Video] _ Bourbon Whisky Rum.mp4" type="video/mp4">
+  </video>
+        <div class="explore-hero-content">
+            <h1>Explore Our Liquor Collection</h1>
+            <p>Premium choices delivered to your doorstep.</p>
+        </div>
+    </section>
+
+    <!-- Drink grid -->
+    <section id="explore-grid">
+        <h2>Top Collections</h2>
+        <div class="stock-grid">
+
+            <!-- Cards -->
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\jack daniels.webp">
+                <h3>Jack Daniels</h3>
+                <p>₹1800</p>
+                <button class="add-btn" onclick="addToCart('Jack Daniels', 1800)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\red-wine.jpeg">
+                <h3>Red Wine</h3>
+                <p>₹4000</p>
+                <button class="add-btn" onclick="addToCart('Red Wine', 4000)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\kingfisher.webp">
+                <h3>Kingfisher</h3>
+                <p>₹250</p>
+                <button class="add-btn" onclick="addToCart('Kingfisher', 250)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\Badweiser.avif">
+                <h3>Badweiser</h3>
+                <p>₹500</p>
+                <button class="add-btn" onclick="addToCart('Badweiser', 500)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\LCIN00518.webp">
+                <h3>Chivas Regal</h3>
+                <p>₹2200</p>
+                <button class="add-btn" onclick="addToCart('Paneer Butter Masala', 250)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\rose wine.jpg">
+                <h3>Rose wine</h3>
+                <p>₹5200</p>
+                <button class="add-btn" onclick="addToCart('Rose Wine', 5200)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\sparling wine.jpeg">
+                <h3>Sparling Wine</h3>
+                <p>₹1690</p>
+                <button class="add-btn" onclick="addToCart('Sparling Wine', 1690)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\mcdowellsno1.jpg">
+                <h3>McDowell's No. 1</h3>
+                <p>₹3000</p>
+                <button class="add-btn" onclick="addToCart('McDowell\'s No. 1', 3000)">Add to Cart</button>
+            </div>
+            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\vueve-clicquot.avif">
+                <h3>Vueve Clicquot</h3>
+                <p>₹1350</p>
+                <button class="add-btn" onclick="addToCart('Vueve Clicquot', 1350)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    <!-- Add to Cart Section -->
+    <section id="explore-cart" class="cart-section">
+        <h2>Delicious Meals</h2>
+
+        <div class="food-item">
+            <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\french fries.jpg" alt="Food item">
+            <div class="details">
+                <h3>French Fries</h3>
+                <div class="actions">
+                    <span class="price">₹120</span>
+                    <button class="add-btn" onclick="addToCart('French Fries', 120)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="food-item">
+            <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\tandoori chicken.jpg" alt="Food item">
+            <div class="details">
+                <h3>Tandoori Chicken</h3>
+                <div class="actions">
+                    <span class="price">₹380</span>
+                    <button class="add-btn" onclick="addToCart('Tandoori Chicken', 380)">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+        <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\explore.html" class="explore-btn">More items</a>
+
+        <!-- Cart summary -->
+        <div class="cart-summary">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: ₹0</p>
+            <button id="next-btn" onclick="goNext()">Next Step →</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-top ">
+            <div>
+                <div class="brand ">Bhukk</div>
+                <p style="color:var(--text-secondary);margin-top:8px ">Naiyo24 — Delivering your order to your doorstep.</p>
+            </div>
+            <div>
+                <strong>Quick Links</strong>
+                <ul style="margin-top:8px;color:var(--text-secondary);list-style:none ">
+                    <li><a href="#services ">Services</a></li>
+                    <li><a href="#partners ">Partner with Us</a></li>
+                    <li><a href="#contact ">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Support</strong>
+                <ul style="margin-top:8px;color:var(--text-secondary);list-style:none ">
+                    <li><a href="# ">Help Center</a></li>
+                    <li><a href="# ">FAQs</a></li>
+                    <li><a href="# ">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <strong>Social</strong>
+                <div style="display:flex;gap:10px;margin-top:8px ">
+                    <a href="# ">Facebook</a>
+                    <a href="# ">Instagram</a>
+                    <a href="# ">Twitter</a>
+                    <a href="# ">LinkedIn</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container footer-bottom ">
+            <div>© <span id="year "></span> Bhukk · Privacy Policy · Terms &amp; Conditions</div>
+            <div style="color:var(--text-secondary) ">Office: Kolkata · Mon-Fri 10:00–18:00</div>
+        </div>
+    </footer>
+
+    <script src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\js\mainpart.js"></script>
+    <script src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\js\index.js"></script>
+
+
+</body>
+
+</html>
