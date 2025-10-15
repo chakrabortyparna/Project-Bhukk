@@ -124,4 +124,32 @@ function goNext() {
     alert("Proceeding to next step (e.g., checkout page)...");
     // In real website:
     // window.location.href = "checkout.html";
-}
+} // Handle CTA Button Clicks
+document.getElementById("careerBtn").addEventListener("click", function() {
+    alert("Explore exciting career opportunities with BHUKK! Visit our Careers page soon.");
+});
+
+document.getElementById("partnerBtn").addEventListener("click", function() {
+    alert("Partner with BHUKK and grow your business with us!");
+});
+const tabs = document.querySelectorAll(".tab");
+const tabText = document.getElementById("tab-text");
+tabs.forEach(tab => {
+    tab.addEventListener("click", () => {
+        tabs.forEach(t => t.classList.remove("active"));
+        tab.classList.add("active");
+        tabText.textContent = contentData[tab.dataset.tab];
+    });
+});
+//New// Optional: simple animation or hover effect
+const icons = document.querySelectorAll('.food-icons img');
+
+icons.forEach(icon => {
+    icon.addEventListener('mouseenter', () => {
+        icon.style.transform = 'scale(1.2)';
+    });
+
+    icon.addEventListener('mouseleave', () => {
+        icon.style.transform = 'scale(1)';
+    });
+});

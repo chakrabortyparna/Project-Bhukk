@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BHUKK</title>
+    <title>BHUKK- Drink Chill,Repeat</title>
     <link rel="stylesheet" href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\css\style.css" />
     <link rel="stylesheet" href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\css\index.css" />
 </head>
@@ -12,26 +12,20 @@
 <body>
 
     <!-- Navigation bar -->
-    <nav class="glass-nav">
-        <div class="logo">
-            <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\index.html" class="logo-link">
-                <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\bhuk.png" alt="BHUKK Logo" />
-                <span class="logo-text"><i>BHUKK- Drink,Chill,Repeat</i></span>
-            </a>
-        </div>
-        <ul class="nav-links">
-            <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\about.html" class="active">Home</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\partners.html">Partners with us</a>
-                <!---<details style="padding:8px 0">
-                    <summary style="cursor:pointer">Partner with Us</summary>
-                    <a href="#restaurant-partner" style="display:block;padding:6px 12px">Restaurant Partner</a>
-                    <a href="#liquor-partner" style="display:block;padding:6px 12px">Liquor Store Partner</a>
-                    <a href="#delivery-partner" style="display:block;padding:6px 12px">Delivery Partner</a>
-                    </details>--->
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="transparent">
+            <div class="logo-section">
+                <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\bhuk.png" alt="Bhukk Logo" />
+                <h1>
+                    <i>BHUKK- Drink,Chill,Repeat</h1></i>
+            </div>
+            <div class="nav-links">
+                <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\index.html">Home</a>
+                <a href="#services">Services</a>
+                <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\partners.html">Partner with Us ▾</a>
+
+        </nav>
+    </header>
 
 
     <!-- Hero section -->
@@ -45,46 +39,71 @@
         <div class="hero-content fade-in">
             <h1>Satisfy Your Cravings, Delivered Fast </h1>
             <p>Order Food & Liquor at Your Doorstep with Bhukk</p>
-
-            <!-- store buttons -->
-            <div class="download-btns">
-                <a href="#" class="store-btn dark">
-                    <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\Google-Play-Logo.png" alt="Get it on Google Play" />
-                </a>
-                <a href="#" class="store-btn dark">
-                    <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\app-store-logo.png" alt="Download on the App Store" />
-                </a>
+            <div class="cta-row">
+                <button class="primary" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})">Get Started</button>
+                <button class="primary" onclick="document.getElementById('download').scrollIntoView({behavior:'smooth'})"><a href='C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\index.html'>Download Now</a></button>
             </div>
+            <br>
+
             <p>
                 Available in your city — Kolkata, Delhi, Chennai, Mumbai & more
-
+                <!-- store buttons -->
+                <div class="download-btns">
+                    <a href="#" class="store-btn dark">
+                        <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\Google-Play-Logo.png" alt="Get it on Google Play" />
+                    </a>
+                    <a href="#" class="store-btn dark">
+                        <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\app-store-logo.png" alt="Download on the App Store" />
+                    </a>
+                </div>
             </p>
-
-            <a href="#" class="primary-download-btn">Download Now</a>
         </div>
     </section>
+    </div>
+    </section>
+    <!-- APP MOCKUP -->
+    <section class="container app-section">
+        <div class="features">
+            <h3>Bhukk App — Your one-stop ordering solution</h3>
+            <div class="feature fade-in">
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--accent);display:grid;place-items:center">⚡</div>
+                <div>
+                    <div style="font-weight:700">Fast Checkout</div>
+                    <div style="color:var(--text-secondary);font-size:13px">Save addresses, cards & reorder with one tap.</div>
+                </div>
+            </div>
 
-    <!-- Stock buttons -->
-    <section id="stock">
-        <h2>Our Collection</h2>
-        <div class="stock-grid" id="stockGrid">
-            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\tuborg.webp">
-                <h3>Tuborg</h3>
-                <p>₹860</p>
+            <div class="feature fade-in">
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--accent);display:grid;place-items:center">📊</div>
+                <div>
+                    <div style="font-weight:700">Real-time Tracking</div>
+                    <div style="color:var(--text-secondary);font-size:13px">Track your order from store to doorstep.</div>
+                </div>
             </div>
-            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\hard drinks\royal stag.webp">
-                <h3>Royal stag</h3>
-                <p>₹1100</p>
+
+            <div class="feature fade-in">
+                <div style="width:44px;height:44px;border-radius:10px;background:var(--accent);display:grid;place-items:center">🏷</div>
+                <div>
+                    <div style="font-weight:700">Exclusive Offers</div>
+                    <div style="color:var(--text-secondary);font-size:13px">Personalised deals for every user.</div>
+                </div>
             </div>
-            <div class="stock-card"><img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\white wine.jpg">
-                <h3>White Wine</h3>
-                <p>₹1250</p>
+
+            <div class="badges" style="margin-top:8px">
+                <div class="badge">📱 Play Store</div>
+                <div class="badge"> App Store</div>
             </div>
         </div>
-        <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\explore.html" class="explore-btn">Explore More</a>
 
+        <div class="device-mock fade-in">
+            <!-- Replace with actual phone mockup image or inline SVG -->
+            <div style="text-align:center;padding:24px;color:var(--text-secondary)">
+                <img src="C:\Users\HOME\Music\Project Bhukk\image\red-wine.jpeg" alt="App mockup" style="max-height:340px;filter:drop-shadow(0 12px 30px rgba(0,0,0,.12))" />
+                <div style="margin-top:10px;color:var(--text-secondary)">Drop your app screenshots here</div>
+            </div>
         </div>
     </section>
+    <!--city-->
     <section id="city">
         <h2 align="center"> Available in your city</h2>
         <div class="city-grid" id="CityGrid">
@@ -116,44 +135,96 @@
             </div>
         </div>
     </section>
+    <!--App banner-->
+    <section class="app-banner">
+        <div class="app-container">
+            <!-- Left Text Section -->
+            <div class="app-text">
+                <h4 class="brand-name">
+                    <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\bhuk.png" alt="Bhukk Logo" class="brand-logo" /> Bhukk
+                </h4>
+                <h1>Download the Bhukk App now!</h1>
+                <p>For the best offers and discounts curated specially for you.</p>
+            </div>
+
+            <!-- Right QR Section -->
+            <div class="app-qr">
+                <div class="qr-box">
+                    <img src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\image\qr.png" alt="QR Code" class="qr-image" />
+                    <p class="scan-text">Scan to download</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p class='brand-name'>What' s new in BHUKK? </p>
+
+            <marquee direction="up" scrollamount="3" behavior="scroll" loop="infinite">
+                <li>➣Get exclusive offers on Bhukk App!
+                </li>
+                <li>➣ Pay in online and get cashback!
+                </li>
+                <li>➣ Download now and enjoy rewards!</li>
+                <li>➣ Quick delivery — anytime, anywhere!</li>
+            </marquee>
+    </section>
+
+
     <!-- FOOTER -->
     <footer>
         <div class="container footer-top ">
             <div>
                 <div class="brand ">Bhukk</div>
-                <p style="color:var(--text-secondary);margin-top:8px ">Naiyo24 — Delivering your order to your doorstep.</p>
+                <br>
+                <p>Naiyo24 — Delivering your order to your doorstep.</p>
             </div>
-            <div>
+            <div class="footer ">
                 <strong>Quick Links</strong>
-                <ul style="margin-top:8px;color:var(--text-secondary);list-style:none ">
-                    <li><a href="#services ">Services</a></li>
-                    <li><a href="#partners ">Partner with Us</a></li>
-                    <li><a href="#contact ">Contact</a></li>
-                </ul>
+
+                <li><a href="#services ">Services</a></li>
+                <li><a href="#partners ">Partner with Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+
             </div>
-            <div>
+            <div class="footer ">
                 <strong>Support</strong>
-                <ul style="margin-top:8px;color:var(--text-secondary);list-style:none ">
-                    <li><a href="# ">Help Center</a></li>
-                    <li><a href="# ">FAQs</a></li>
-                    <li><a href="# ">Contact Us</a></li>
-                </ul>
+                <li><a href="# ">Help Center</a></li>
+                <li><a href="# ">FAQs</a></li>
+                <li><a href="# ">Contact Us</a></li>
             </div>
             <div>
-                <strong>Social</strong>
-                <div style="display:flex;gap:10px;margin-top:8px ">
-                    <a href="# ">Facebook</a>
-                    <a href="# ">Instagram</a>
-                    <a href="# ">Twitter</a>
-                    <a href="# ">LinkedIn</a>
+                <!-- Floating Footer Social Icons -->
+                <div class="footer-icons">
+                    <a href="#" class="icon facebook" title="Facebook">f
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon twitter" title="Twitter/X">x
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="icon youtube" title="Youtube">▶
+                        <i class="fas fa-youtube"></i>
+                    </a>
+                    <a href="#" class="icon instagram" title="Instagram">i
+                        <i class="fab fa-instagram"></i>
+                    <a href="#" class="icon arrow" title="Back to Top" id="scrollTopBtn">🔝
+                        <i class="fab fa-chevron-up"></i>
+                    </a>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="container footer-bottom ">
-            <div>© <span id="year "></span> Bhukk · Privacy Policy · Terms &amp; Conditions</div>
-            <div style="color:var(--text-secondary) ">Office: Kolkata · Mon-Fri 10:00 – 18:00</div>
+            <div>© <span id="year ">Bhukk-
+                    <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\privacy.html ">Privacy Policy
+                    </a>
+                    <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\terms.html ">Terms & Conditions</a>
+                    </span>
+            </div>
+
         </div>
+        <p>Email: bhukk@gmail.com</p>
+
+        <p>Office: Kolkata · Mon-Sat 10:00 - 18:00</p>
     </footer>
     <script src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\js\mainpart.js "></script>
     <script src="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\js\index.js "></script>
