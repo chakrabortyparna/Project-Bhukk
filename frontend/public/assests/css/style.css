@@ -907,8 +907,8 @@
         font-weight: 500;
     }
     
-    .privacy-container a:hover {
-        text-decoration: underline;
+    .policy-content p {
+        line-height: 1.6;
     }
     /* ===========================
    APP MOCKUP SECTION
