@@ -65,20 +65,6 @@ window.addEventListener('load', () => {
         floatElement(el, 3000, 6);
     });
 });
-
-/* ========= REVEAL ANIMATION CSS HELPER CLASSES ========= */
-/* These classes are used in your style.css or responsive.css:
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease, transform 1s ease;
-}
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-*/
-
 /* ========= OPTIONAL: SCROLL TO TOP BUTTON ========= */
 const scrollBtn = document.createElement('button');
 scrollBtn.innerText = '↑';
@@ -152,4 +138,19 @@ icons.forEach(icon => {
     icon.addEventListener('mouseleave', () => {
         icon.style.transform = 'scale(1)';
     });
+
+}); // Partner Form Submission Handling
+document.getElementById("partnerForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+    let dataSummary = "";
+
+    for (let [key, value] of formData.entries()) {
+        dataSummary += $ { key }: $ { value }\
+        n;
+    }
+
+    alert("✅ Registration submitted successfully!\n\n" + dataSummary);
+    this.reset();
 });

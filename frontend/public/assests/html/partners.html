@@ -17,9 +17,11 @@
                 <i>BHUKK- Drink,Chill,Repeat</h1></i>
         </div>
         <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="#">How It Works</a>
-            <a href="#">For Partners</a>
+            <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\index.html">Home</a>
+            <a href="#Services">Services</a>
+
+            <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\works.html">How It Works</a>
+            <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\partners.html">Partners with us</a>
         </div>
     </nav>
 
@@ -28,94 +30,110 @@
     <link rel="stylesheet" href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\css\index.css" />
 
     <body>
-        <br>
-        <br>
-        <br>
-        <section id="partners" class="container" style="padding:32px 0">
-            <div style="display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap">
-                <div style="flex:1">
-                    <h3>Grow Your Business with Bhukk</h3>
-                    <p style="color:var(--text-secondary)">Join 1000+ partners already on board. Increased visibility, marketing support and zero commission for the first 3 months.</p>
-                </div>
-                <div style="display:flex;gap:12px">
-                    <button class="btn primary" onclick="openModal('partner')">Register Now</button>
-                    <a href="#franchise" class="btn" style="background:var(--accent);border-radius:10px">Franchise Inquiry</a>
-                </div>
-            </div>
-        </section>
-        <!-- DELIVERY PARTNER -->
-        <section id="delivery-partner" class="container" style="padding:24px 0;border-top:1px solid rgba(0,0,0,.03)">
-            <div style="display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap">
-                <div style="flex:1;min-width:260px">
-                    <h3>Be Your Own Boss</h3>
-                    <p style="color:var(--text-secondary)">Flexible hours, weekly payouts and incentives. Register as a delivery partner.</p>
-                    <ul style="color:var(--text-secondary);margin-top:8px;">
-                        <li>Valid driving license</li>
-                        <li>Vehicle (bike/scooter)</li>
-                        <li>Smartphone & age 18+</li>
-                    </ul>
-                </div>
-                <div style="min-width:280px;display:flex;align-items:center;justify-content:center">
-                    <button class="btn primary" onclick="openModal('delivery')">Register as Delivery Partner</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- FRANCHISE -->
-        <section id="franchise" class="container" style="padding:24px 0">
-            <h3>Franchise & Warehouse Opportunities</h3>
-            <div style="display:flex;gap:18px;flex-wrap:wrap;margin-top:10px">
-                <div style="flex:1;min-width:220px;background:var(--white);padding:14px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.04)">
-                    <strong>Investment Details</strong>
-                    <p style="color:var(--text-secondary);font-size:14px;margin-top:10px">Initial investment range, ROI projections and break-even timelines shared after inquiry.</p>
-                </div>
-                <div style="flex:1;min-width:220px;background:var(--white);padding:14px;border-radius:12px;box-shadow:0 8px 30px rgba(0,0,0,.04)">
-                    <strong>Requirements</strong>
-                    <p style="color:var(--text-secondary);font-size:14px;margin-top:10px">Warehouse space (min 2000 sq ft), investment capacity and relevant experience.</p>
-                </div>
-            </div>
-        </section>
-
 
         <br>
         <br>
+
+        <!-- REGISTRATION FORM SECTION -->
+        <section class="registration ">
+            <h1>Partner Registration Form</h1>
+            <form id="partnerForm ">
+                <label>Business Name</label>
+                <input type="text " name="businessName " required>
+
+                <label>Owner Name</label>
+                <input type="text " name="ownerName " required>
+
+                <label>Business Type</label>
+                <select name="businessType " required>
+        <option value=" ">-- Select Type --</option>
+        <option value="Restaurant ">Restaurant</option>
+        <option value="Liquor Store ">Liquor Store</option>
+      </select>
+
+                <label>Email</label>
+                <input type="email " name="email " required>
+
+                <label>Phone Number</label>
+                <input type="tel " name="phone " required>
+
+                <label>Address</label>
+                <textarea name="address " required></textarea>
+
+                <label>City</label>
+                <select name="city " required>
+        <option value=" ">-- Select City --</option>
+        <option value="Kolkata ">Kolkata</option>
+        <option value="Delhi ">Delhi</option>
+        <option value="Mumbai ">Mumbai</option>
+        <option value="Bangalore ">Bangalore</option>
+      </select>
+
+                <label>Upload Documents</label>
+                <input type="file " name="documents " multiple required>
+
+                <button type="submit ">Submit Registration</button>
+            </form>
+        </section>
+
+
+
         <!-- FOOTER -->
         <footer>
             <div class="container footer-top ">
                 <div>
-                    <div class="brand ">Bhukk</div>
-                    <p style="color:var(--text-secondary);margin-top:8px ">Naiyo24 — Delivering your order to your doorstep.</p>
+                    <div class="brand">Bhukk</div>
+                    <br>
+                    <p>Naiyo24 — Delivering your order to your doorstep.</p>
                 </div>
-                <div>
+                <div class="footer ">
                     <strong>Quick Links</strong>
-                    <ul style="margin-top:8px;color:var(--text-secondary);list-style:none ">
-                        <li><a href="#services ">Services</a></li>
-                        <li><a href="#partners ">Partner with Us</a></li>
-                        <li><a href="#contact ">Contact</a></li>
-                    </ul>
+
+                    <li><a href="#services ">Services</a></li>
+                    <li><a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\partners.html">Partner with Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
                 </div>
-                <div>
+                <div class="footer ">
                     <strong>Support</strong>
-                    <ul style="margin-top:8px;color:var(--text-secondary);list-style:none ">
-                        <li><a href="# ">Help Center</a></li>
-                        <li><a href="# ">FAQs</a></li>
-                        <li><a href="# ">Contact Us</a></li>
-                    </ul>
+                    <li><a href="# ">Help Center</a></li>
+                    <li><a href="# ">FAQs</a></li>
+                    <li><a href="# ">Contact Us</a></li>
                 </div>
                 <div>
-                    <strong>Social</strong>
-                    <div style="display:flex;gap:10px;margin-top:8px ">
-                        <a href="# ">Facebook</a>
-                        <a href="# ">Instagram</a>
-                        <a href="# ">Twitter</a>
-                        <a href="# ">LinkedIn</a>
+                    <!-- Floating Footer Social Icons -->
+                    <div class="footer-icons">
+                        <a href="#" class="icon facebook" title="Facebook">f
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                        <a href="#" class="icon twitter" title="Twitter/X">x
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                        <a href="#" class="icon youtube" title="Youtube">▶
+                        <i class="fas fa-youtube"></i>
+                    </a>
+                        <a href="#" class="icon instagram" title="Instagram">i
+                        <i class="fab fa-instagram"></i>
+                    <a href="#" class="icon arrow" title="Back to Top" id="scrollTopBtn">🔝
+                        <i class="fab fa-chevron-up"></i>
+                    </a>
+                        </a>
                     </div>
                 </div>
             </div>
-
+            <br>
             <div class="container footer-bottom ">
-                <div>© <span id="year "></span> Bhukk · Privacy Policy · Terms &amp; Conditions</div>
-                <div style="color:var(--text-secondary) ">Office: Kolkata · Mon-Fri 10:00–18:00</div>
+                <div>© <span id="year ">Bhukk-
+                    <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\privacy.html ">Privacy Policy
+                    </a>
+                    <a href="C:\Users\HOME\Music\Project Bhukk\Project-Bhukk\frontend\public\assests\html\terms.html ">Terms & Conditions</a>
+                    </span>
+                </div>
+
+            </div>
+            <div class="container footer-bottom">Email: bhukk@gmail.com
+            </div>
+            <div class="container footer-bottom">Office: Kolkata · Mon-Sat 11:00 - 17:00
             </div>
         </footer>
 
