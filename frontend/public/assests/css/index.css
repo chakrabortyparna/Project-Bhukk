@@ -1,314 +1,158 @@
-/* ==========================================
+            /* ==========================================
    BHUKK Responsive Styles
    ========================================== */
-
-
-/* ===== Base Utility ===== */
-
-:root {
-    --primary-color: #c1121f;
-    --text-dark: #111;
-    --text-light: #f8f8f8;
-}
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-
-/* ==============================
-   Responsive Navbar Adjustments
-   ============================== */
-
-@media (max-width: 1024px) {
-    .glass-nav {
-        padding: 0.8rem 1.5rem;
-    }
-    .nav-links {
-        gap: 1.2rem;
-    }
-    .glass-nav .logo img {
-        height: 45px;
-    }
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        position: fixed;
-        top: 70px;
-        right: -100%;
-        background: rgba(15, 15, 15, 0.95);
-        backdrop-filter: blur(15px);
-        flex-direction: column;
-        align-items: center;
-        gap: 1.5rem;
-        padding: 2rem 0;
-        width: 60%;
-        height: calc(100vh - 70px);
-        transition: right 0.4s ease;
-        z-index: 999;
-    }
-    .nav-links.active {
-        right: 0;
-    }
-    .nav-toggle {
-        display: block;
-        cursor: pointer;
-    }
-    .nav-toggle span {
-        background: #fff;
-        height: 3px;
-        width: 25px;
-        margin: 4px;
-        display: block;
-        border-radius: 3px;
-        transition: 0.3s;
-    }
-    .glass-nav .logo-text {
-        font-size: 1.3rem;
-    }
-}
-
-
-/* ==============================
+        /* ===== Base Utility ===== */
+        
+         :root {
+            --primary-color: #c1121f;
+            --text-dark: #111;
+            --text-light: #f8f8f8;
+        }
+        
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        /* ====
    HERO SECTION (Responsive)
-   ============================== */
-
-@media (max-width: 1024px) {
-    #hero h1 {
-        font-size: 2.3rem;
-    }
-    .hero-content p {
-        font-size: 1rem;
-        padding: 0 1rem;
-    }
-    .store-btn.dark img {
-        height: 55px;
-    }
-    .primary-download-btn {
-        padding: 0.9rem 1.8rem;
-    }
-}
-
-@media (max-width: 768px) {
-    #hero {
-        height: 90vh;
-    }
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-    .hero-content p {
-        font-size: 0.95rem;
-    }
-    .download-btns {
-        flex-direction: column;
-        gap: 0.8rem;
-    }
-    .store-btn.dark img {
-        height: 50px;
-    }
-}
-
-
-/* ==============================
+   ==== */
+        
+        @media (max-width: 1024px) {
+            #hero h1 {
+                font-size: 2.3rem;
+            }
+            .hero-content p {
+                font-size: 1rem;
+                padding: 0 1rem;
+            }
+            .store-btn.dark img {
+                height: 55px;
+            }
+            .primary-download-btn {
+                padding: 0.9rem 1.8rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            #hero {
+                height: 90vh;
+            }
+            .hero-content h1 {
+                font-size: 1.8rem;
+            }
+            .hero-content p {
+                font-size: 0.95rem;
+            }
+            .download-btns {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+            .store-btn.dark img {
+                height: 50px;
+            }
+        }
+        /* ==============================
    HOW IT WORKS SECTION
    ============================== */
-
-@media (max-width: 992px) {
-    .how-container {
-        gap: 2rem;
-    }
-    .how-image img {
-        width: 300px;
-    }
-    .how-steps .step {
-        padding: 1rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .how-container {
-        flex-direction: column;
-        text-align: center;
-    }
-    .how-image img {
-        width: 260px;
-        margin-bottom: 1.5rem;
-    }
-    .how-steps {
-        text-align: center;
-    }
-    .how-steps .step {
-        margin: 0 auto 1rem;
-        max-width: 90%;
-    }
-}
-
-
-/* ==============================
-   EXPLORE PAGE GRID
-   ============================== */
-
-@media (max-width: 1200px) {
-    .collection-grid {
-        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    }
-}
-
-@media (max-width: 768px) {
-    .collection-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-        gap: 1rem;
-    }
-    .collection-card img {
-        height: 180px;
-    }
-    .collection-card h3 {
-        font-size: 1rem;
-    }
-    .collection-card p {
-        font-size: 0.9rem;
-    }
-}
-
-
-/* ==============================
-   PARTNERS PAGE
-   ============================== */
-
-@media (max-width: 992px) {
-    #partners-hero {
-        height: 70vh;
-    }
-    #partners-hero h1 {
-        font-size: 2rem;
-    }
-    .partner-form {
-        width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .partner-info {
-        flex-direction: column;
-        text-align: center;
-    }
-    .partner-info img {
-        width: 280px;
-        margin-bottom: 1.5rem;
-    }
-    .partner-form input,
-    .partner-form textarea {
-        width: 100%;
-    }
-}
-
-
-/* ==============================
-   APP MOCKUP SECTION
-   ============================== */
-
-@media (max-width: 992px) {
-    .mockup-container {
-        gap: 2rem;
-    }
-    .mockup-text h2 {
-        font-size: 2rem;
-    }
-    .mockup-image img {
-        width: 320px;
-    }
-}
-
-@media (max-width: 768px) {
-    .mockup-container {
-        flex-direction: column-reverse;
-        text-align: center;
-    }
-    .mockup-text {
-        text-align: center;
-    }
-    .mockup-image img {
-        width: 270px;
-        margin-bottom: 2rem;
-    }
-    .mockup-text h2 {
-        font-size: 1.7rem;
-    }
-    .primary-download-btn {
-        padding: 0.8rem 1.6rem;
-        font-size: 0.95rem;
-    }
-}
-
-
-/* ==============================
-   FOOTER SECTION
-   ============================== */
-
-@media (max-width: 992px) {
-    footer {
-        padding: 3rem 1.5rem;
-    }
-    .footer-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 2rem;
-    }
-    .footer-logo img {
-        width: 80px;
-    }
-}
-
-@media (max-width: 768px) {
-    .footer-container {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-    .footer-logo img {
-        width: 100px;
-        margin: 0 auto 1rem;
-    }
-    .social-links {
-        justify-content: center;
-    }
-    footer p {
-        font-size: 0.85rem;
-    }
-}
-
-
-/* ==============================
-   SCROLL TO TOP BUTTON (if any)
-   ============================== */
-
-@media (max-width: 768px) {
-    #scroll-top {
-        right: 15px;
-        bottom: 15px;
-        padding: 0.6rem 0.7rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .docs-container {
-        grid-template-columns: 1fr 1fr;
-        gap: 1.5rem;
-    }
-    .docs-container .doc-card:nth-child(5) {
-        max-width: 80%;
-    }
-}
-
-@media (max-width: 768px) {
-    .docs-container {
-        grid-template-columns: 1fr;
-    }
-    .docs-container .doc-card:nth-child(5) {
-        grid-column: auto;
-        max-width: 100%;
-    }
-}
+        
+        @media (max-width: 992px) {
+            .how-container {
+                gap: 2rem;
+            }
+            .how-image img {
+                width: 300px;
+            }
+            .how-steps .step {
+                padding: 1rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .how-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .how-image img {
+                width: 260px;
+                margin-bottom: 1.5rem;
+            }
+            .how-steps {
+                text-align: center;
+            }
+            .how-steps .step {
+                margin: 0 auto 1rem;
+                max-width: 90%;
+            }
+        }
+        /* ====PARTNERS PAGE====*/
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            section {
+                padding: 40px 15px;
+            }
+        }
+        /*About*/
+        /* Animation */
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        /* Responsive */
+        
+        @media (max-width: 768px) {
+            .about-section {
+                margin: 40px 20px;
+            }
+            .tabs {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        
+        @keyframes float {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-20px);
+            }
+        }
+        /*Terms*/
+        
+        @media (max-width: 768px) {
+            .terms-section {
+                padding: 40px 5%;
+            }
+            h1 {
+                font-size: 26px;
+            }
+            .terms-list h3 {
+                font-size: 18px;
+            }
+        }
+        /* ====FOOTER SECTION====*/
+        
+        @media (max-width: 992px) {
+            /* Responsive for Small Screens */
+            @media (max-width: 768px) {
+                .footer-icons {
+                    right: 15px;
+                    bottom: 60px;
+                }
+                .icon {
+                    width: 40px;
+                    height: 40px;
+                    font-size: 16px;
+                }
+            }
